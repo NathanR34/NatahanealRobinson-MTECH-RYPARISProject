@@ -37,24 +37,28 @@ nav, footer {
     gap: 15px;
     padding-bottom: 40px;
 }
-.image {
-    flex: 1 1 300px;
-    height: 200px;
-    text-align: center;
-    background-color: white;
+.image-element {
+    flex: 1 1 200px;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
 }
-.image > img {
+.image-element .image {
+    height: 30vmin;
+}
+.images .image > img {
     object-fit: cover;
     object-position: 50% 50%;
     width: 100%;
     height: 100%;
 }
-.image > div {
-    display: block;
+.images .image-footer {
     width: 100%;
     padding: 8px 0;
     background-color: white;
+    text-align: center;
 }
+
 section, footer, nav {
     padding-left: 6%;
     padding-right: 6%;
@@ -70,6 +74,7 @@ header {
     height: 400px;
     background-color: burlywood;
     background-image: url("../images/hero-image.jpg");
+    background-size: cover;
 }
 header > h1 {
     background-color: white;
@@ -79,10 +84,64 @@ header > h1 {
     text-transform: uppercase;
     font-weight: 900;
 }
-.grey {
+
+.quote-box {
+    font-size: large;
+    font-weight: bold;
+    color: #555555;
+}
+.quote-box > p {
+    max-width: 70ch;
+}
+.recipe-list.small {
+    font-size: small;
+}
+.recipe-list > li > p, .recipe-list > li > span {
+    font-size: small;
+    width: 52ch;
+}
+
+.bg-light-grey {
     background-color: lightgrey;
+}
+.bg-dark-red {
+    background-color: darkred;
 }
 .border {
     border: 3px solid grey;
 }
 
+.flex, .flex-col, .flex-start, .flex-end, .flex-center {
+    display: flex;
+}
+.flex-col {
+    flex-direction: column;
+}
+.flex-start {
+    justify-content: flex-start;
+}
+.flex-end {
+    justify-content: flex-end;
+}
+.flex-grow {
+    flex-grow: 1;
+}
+.flex-even {
+    flex: 1;
+}
+.flex-center {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+button {
+    padding: 4px;
+    border-radius: 20px;
+}
+.text-white {
+    color: white;
+}
+.text-center {
+    text-align: center;
+}
