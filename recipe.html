@@ -18,35 +18,40 @@
                 <a href="#">Meal Ideas</a>
             </div>
         </nav>
-        <header>
+        <header class="hero">
+            <img class="fill" src="./images/bengal-burger.jpg">
             <h1>Hamburger of the week</h1>
         </header>
         <main>
-            <section class="bg-light-grey">
+            <section class="bg-secondary">
                 <h3>Time</h3>
-                <div>
+                <div class="stats">
                     <div><span>Level: </span><span>Easy</span></div>
                     <div><span>Prep: </span><span>10 min</span></div>
-                    <div><span>Yeild: </span><span>4 Hamburgers</span></div>
+                    <div><span>Yield: </span><span>4 Hamburgers</span></div>
                 </div>
+                <div class="stats">
                     <div><span>Total: </span><span>25 min</span></div>
                     <div><span>Cook: </span><span>15 min</span></div>
                 </div>
+                <div class="stats">
+                    
+                </div>
             </section>
             <section>
-                <div>
+                <div class="col center">
                     <h2>Bengal burger</h2>
                     <div>
                         <span>*****</span>
                         <span>26</span>
                         <span>Reviews</span>
                     </div>
-                    <div>
-                        <button class="bg-dark-red text-white">Save Recipe</button>
-                        <button onclick="print">print</button>
+                    <div class="action-buttons">
+                        <button class="primary-style">Save Recipe</button>
+                        <button onclick="print()">print</button>
                     </div>
                 </div>
-                <div class="quote-box flex-center text-center bg-light-grey">
+                <div class="quote-box col center text-center bg-secondary">
                     <p>
                         "No more dry, lackluster burgers. These are juicy, and spices 
                         can be easily added or changed to suit anyone's taste. Baste 
@@ -55,8 +60,8 @@
                         it forms patties that hold their shape."
                     </p>
                 </div>
-                <div class="flex">
-                    <div class="flex-even">
+                <div class="row even">
+                    <div>
                         <div>
                             <h3>Ingredients</h3>
                             <ul class="recipe-list">
@@ -84,7 +89,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="flex-even">
+                    <div>
                         <h3>Directions</h3>
                         <div>
                             <ol class="recipe-list small">
@@ -161,8 +166,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex-center">
-                    <iframe></iframe>
+                <div class="video-container bg-secondary">
+                    <iframe class="video" width="1024" height="512" src=""></iframe>
                 </div>
             </section>
         </main>
