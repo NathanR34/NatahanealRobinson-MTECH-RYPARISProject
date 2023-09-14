@@ -88,7 +88,10 @@ main > section {
 .quote-box {
     font-size: large;
     font-weight: bold;
-    color: #555555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .quote-box > p {
     max-width: 70ch;
@@ -132,10 +135,10 @@ main > section {
     flex-direction: column;
     padding: 40px;
 }
+
 .video-container .video {
     border-radius: 5px;
-    border: 3px solid #555555;
-    background-color: #777777;
+    border: 3px solid grey;
 }
 
 .bg-secondary {
@@ -150,35 +153,9 @@ main > section {
     text-align: center;
 }
 
-.col, .row {
-    display: flex;
-}
-.col {
-    flex-direction: column;
-}
-.row {
-    flex-direction: row;
-}
-
-.row.center, .col.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-
-.row.even > *, .col.even > * {
-    flex: 1;
-}
-
 button {
     padding: 4px;
     border-radius: 20px;
-}
-
-img.style-svg * , svg.style-svg *, * img.style-svg * , * svg.style-svg *   {
-    fill: #A63223;
 }
 
 button.primary-style {
@@ -214,4 +191,12 @@ button.icon {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.recipe-body {
+    display: flex;
+}
+
+.recipe-body > * {
+    flex: 1;
 }
