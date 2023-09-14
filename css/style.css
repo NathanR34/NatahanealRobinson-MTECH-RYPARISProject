@@ -109,6 +109,9 @@ main > section {
     font-size: small;
     width: 52ch;
 }
+.recipe-list.sub-labeled {
+    margin-top: 4px;
+}
 
 .images {
     display: flex;
@@ -205,4 +208,10 @@ button.icon {
 
 .recipe-body > * {
     flex: 1;
+}
+
+.sub-header {
+    margin-left: 40px;
+    margin-bottom: 4px;
+    font-size: smaller;
 }
